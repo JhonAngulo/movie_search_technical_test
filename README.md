@@ -1,4 +1,4 @@
-# Finkargo | Technical Test
+# Movie Search | Technical Test
 
 
 ## commands
