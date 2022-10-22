@@ -1,4 +1,4 @@
-# Finkargo Technical Test
+# Finkargo | Technical Test
 
 
 ## commands
