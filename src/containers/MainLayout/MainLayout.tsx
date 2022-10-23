@@ -66,7 +66,9 @@ const MainLayout = (): JSX.Element => {
         <br />
       </div>
       <footer className="footer">
-        {`© Todos los derechos reservados - THE MOVIE SEARCH APP | ${new Date().getFullYear()}`}
+        <p className="footer__text">
+          {`© Todos los derechos reservados - THE MOVIE SEARCH APP | ${new Date().getFullYear()}`}
+        </p>
       </footer>
     </>
   )

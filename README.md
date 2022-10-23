@@ -1,5 +1,18 @@
 # Movie Search | Technical Test
 
+this project was carried out by Jhon Manuel Angulo Moncada, as a technical test to apply for a vacancy.
+
+## Description
+The project is a shows and movies search engine in the TVMAZE api.
+
+When entering text in the search engine, the search is carried out and the matches are displayed, you can view the basic information of the show or movie and it is possible by clicking on the "+" icon to go to TVMAZE to see the complete information of the show or movie.
+
+## Used technologies
+
+1) [Vite](https://vitejs.dev/) 
+2) [Typescript](https://www.typescriptlang.org/docs/)
+3) [React 18](https://es.reactjs.org/) 
+4) [Sass](https://sass-lang.com/)
 
 ## commands
 
@@ -9,11 +22,22 @@
     npm run build
     ```
 
+  - view local preview:
+
+    ```
+    npm run preview
+    ```
+
   - development start:
 
     ```
     npm run dev
     ```
+
+
+## API TV MAZE
+- https://www.tvmaze.com/api
+
 
 ## documents config
 
