@@ -2,6 +2,8 @@
 
 this project was carried out by Jhon Manuel Angulo Moncada, as a technical test to apply for a vacancy.
 
+![Desktop view](./project_images/desktop_view.png
+
 ## Description
 The project is a shows and movies search engine in the TVMAZE api.
 
