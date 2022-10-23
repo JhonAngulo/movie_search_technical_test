@@ -119,14 +119,22 @@
       border-radius: 50%;
       cursor: pointer;
       background-color: $secundary-color;
-      text-align: center;
-      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      transition: background-color ease-in-out 800ms;
+
+      &:hover {
+        background-color: $primary-color;
+      }
     }
 
     &--link {
       text-decoration: none;
       color: $white-color;
       font-size: 30px;
+
     }
   }
 
