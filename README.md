@@ -2,12 +2,25 @@
 
 this project was carried out by Jhon Manuel Angulo Moncada, as a technical test to apply for a vacancy.
 
-![Desktop view](./project_images/desktop_view.png
+## view on Code Sandbox
+[Code Sandbox Link](https://codesandbox.io/p/github/JhonAngulo/movie_search_technical_test/main)
 
 ## Description
 The project is a shows and movies search engine in the TVMAZE api.
 
 When entering text in the search engine, the search is carried out and the matches are displayed, you can view the basic information of the show or movie and it is possible by clicking on the "+" icon to go to TVMAZE to see the complete information of the show or movie.
+
+### Desktop view
+![Desktop view](./project_images/desktop_view.png)
+
+### Tablet view
+![Desktop view](./project_images/tablet_view.png)
+
+### Mobile view
+![Desktop view](./project_images/mobile_view.png)
+
+### Lighthouse report
+![Desktop view](./project_images/lighthouse-report.png)
 
 ## Used technologies
 
