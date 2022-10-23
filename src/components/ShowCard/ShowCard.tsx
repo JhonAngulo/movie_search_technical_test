@@ -1,3 +1,4 @@
+import Chip from '@components/Chip'
 import { Show } from 'src/models/dataModel'
 import no_image from '@assets/no_image.png'
 
@@ -6,14 +7,18 @@ interface ShowCardProps {
 }
 
 const ShowCard = ({ show }: ShowCardProps): JSX.Element => {
-  console.log(show.image)
+  // console.log(show.image)
 
   const handleSumaryHtml = (summary: string): { __html: string } => {
     if (summary === null) {
       return { __html: 'Without description' }
     }
 
+    if (!summary.includes('<p>')) {
+      summary = `<p>${summary}`
+    }
     const firstParagraph = summary.split('</p><p>')
+
     return { __html: `${firstParagraph[0]}</p>` }
   }
 
@@ -41,6 +46,11 @@ const ShowCard = ({ show }: ShowCardProps): JSX.Element => {
           className="show_card__info--summary"
           dangerouslySetInnerHTML={handleSumaryHtml(show.summary)}
         ></div>
+        <div className="chip__container">
+          {show.genres.map((genre) => (
+            <Chip text={genre} key={genre} />
+          ))}
+        </div>
       </div>
     </div>
   )

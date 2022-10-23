@@ -1,0 +1,27 @@
+.chip {
+  background-color: $primary-color;
+  color: $white-color;
+  border-radius: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-right: 6px;
+  text-align: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(auto, 120px) );
+    gap: 10px;
+
+    @media (max-width: 800px) {
+    margin-bottom: 10px;
+    }
+  }
+}
