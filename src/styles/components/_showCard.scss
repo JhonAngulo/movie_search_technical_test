@@ -59,7 +59,7 @@
 
 
   &__info {
-
+    position: relative;
     padding: 10px 50px;
     width: 100%;
     display: grid;
@@ -103,12 +103,30 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-
         @media (max-width: 800px) {
           max-width: 100%;
           text-align: left;
         }
       }
+    }
+
+    &--more {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: $secundary-color;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $white-color;
+      font-size: 30px;
     }
   }
 

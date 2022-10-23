@@ -30,6 +30,16 @@ const ShowCard = ({ show }: ShowCardProps): JSX.Element => {
         />
       </figure>
       <div className="show_card__info">
+        <span className="show_card__info--more">
+          <a
+            href={show.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="show_card__info--link"
+          >
+            +
+          </a>
+        </span>
         <h3 className="show_card__info--title">{show.name}</h3>
         <h4 className="show_card__info--rating">
           Rating:
