@@ -22,10 +22,10 @@
     -webkit-appearance: none;
     color: $text-primary-color;
     border: 1px solid #bebebe;
-    background: var(--input-background);
+    background: $white-color;
     transition: border .3s ease;
     &::placeholder {
-        color: var(--input-placeholder);
+        color: $text-primary-color;
     }
     &:focus {
         outline: none;
@@ -39,7 +39,8 @@
       font-size: 14px;
       line-height: 25px;
       letter-spacing: 0.6px;
-      color: $primary-color;
+      // color: $primary-color;
+      color: darken($primary-color, 30%);
       font-weight: 600;
       background: $white-color;
       border: 1px solid #bebebe;
