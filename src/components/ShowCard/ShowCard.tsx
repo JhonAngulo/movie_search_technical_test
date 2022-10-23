@@ -1,6 +1,6 @@
 import Chip from '@components/Chip'
 import { Show } from 'src/models/dataModel'
-import no_image from '@assets/no_image.png'
+import no_image from '@assets/no_image.jpg'
 
 interface ShowCardProps {
   show: Show
