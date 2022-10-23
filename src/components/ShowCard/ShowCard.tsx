@@ -7,8 +7,6 @@ interface ShowCardProps {
 }
 
 const ShowCard = ({ show }: ShowCardProps): JSX.Element => {
-  // console.log(show.image)
-
   const handleSumaryHtml = (summary: string): { __html: string } => {
     if (summary === null) {
       return { __html: 'Without description' }

@@ -5,15 +5,15 @@ html {
 
 body {
   background-color: $background-color;
-}
-
-main {
-  margin-top: 50px;
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
-  background-color: $white-color;
-  // overflow: scroll;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 40px;
 }
 
 // Elevation
