@@ -1,0 +1,74 @@
+.search_bar {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+
+  &__input {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    color: $text-primary-color;
+    border: 1px solid #bebebe;
+    background: var(--input-background);
+    transition: border .3s ease;
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+    }
+  }
+
+  &__label {
+      text-align: center;
+      padding: 8px 12px;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.6px;
+      color: $primary-color;
+      font-weight: 600;
+      background: $white-color;
+      border: 1px solid #bebebe;
+      transition: background .3s ease, border .3s ease, color .3s ease;
+  }
+
+  &__label,
+  &__input {
+      white-space: nowrap;
+      display: block;
+      &:not(:first-child):not(:last-child) {
+          border-radius: 0;
+      }
+      &:first-child {
+          border-radius: 6px 0 0 6px;
+      }
+      &:last-child {
+          border-radius: 0 6px 6px 0;
+      }
+      &:not(:first-child) {
+          margin-left: -1px;
+      }
+  }
+
+  &:focus-within {
+      & > label {
+          color: $white-color;
+          background: $primary-color;
+          border-color:  $primary-color;
+      }
+  }
+}
