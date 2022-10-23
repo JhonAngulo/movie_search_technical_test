@@ -124,6 +124,11 @@
       align-items: center;
       transition: background-color ease-in-out 800ms;
 
+      @media (max-width: 800px) {
+        top: -204px;
+        right: 12px;
+      }
+
       &:hover {
         background-color: $primary-color;
       }
